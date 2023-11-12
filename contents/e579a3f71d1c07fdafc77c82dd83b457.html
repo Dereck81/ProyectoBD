@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>DetallesVentaGeneral</title>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Source+Code+Pro:300,400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="../assets/css/bootstrap.css">
+<link rel="stylesheet" href="../assets/css/jquery.bonsai.css">
+<link rel="stylesheet" href="../assets/css/main.css">
+<link rel="stylesheet" href="../assets/icon-font/icons.css">
+<script type="text/javascript" src="../assets/js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="../assets/js/bootstrap.js"></script>
+<script type="text/javascript" src="../assets/js/jquery.bonsai.js"></script>
+<script type="text/javascript" src="../assets/js/imageMapResizer.min.js"></script>
+
+  </head>
+  <body>
+    <div>
+
+      <!-- Name Title -->
+
+      <h1>DetallesVentaGeneral</h1>
+
+      <!-- Type and Stereotype -->
+
+      <section style="margin-top: .5em;">
+        <span class="alert alert-info">
+          <span class="node-icon staruml-icon icon-ERDEntity"></span>
+          ERDEntity
+        </span>
+        
+      </section>
+
+      <!-- Path -->
+
+      <section style="margin-top: 10px">
+        
+        
+        
+          
+          <span class="label label-info"><a href='cf9c8b720f3815adeccaf3ef6e48c6c4.html'><span class='node-icon staruml-icon icon-Project'></span>Untitled</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='165ab76907f648a6d6eac200c62291f7.html'><span class='node-icon staruml-icon icon-ERDDataModel'></span>Data Model1</a></span>
+        
+          <span>::</span>
+          <span class="label label-info"><a href='e579a3f71d1c07fdafc77c82dd83b457.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>DetallesVentaGeneral</a></span>
+        
+      </section>
+
+      <!-- Diagram -->
+
+      
+
+      <!-- Description -->
+
+      
+      <section>
+        <h3>Description</h3>
+        <div>
+          
+            <p>Esta tabla contiene los &#39;registros&#39; de las ventas que se realice (por esa razon se incluye id<em>venta), incluye id</em>tipoVenta para que se pueda saber si es un item o un servicio. Ademas se incluyen una relacion con tablas como DetalleVentaItem (donde solo incluye una lista de items de dicho id<em>venta), lo mismo pasa con la tabla DetalleVentaServicio (solo incluye una lista de los servicios de dicho id</em>venta). Finalmente, esta tabla hace relacion con la tabla Venta.</p>
+          
+        </div>
+      </section>
+      
+
+      <!-- Specification -->
+
+      
+
+      <!-- Directed Relationship -->
+
+      
+
+      <!-- Undirected Relationship -->
+
+      
+
+      <!-- Classifier -->
+
+      
+
+      <!-- Interface -->
+
+      
+
+      <!-- Component -->
+
+      
+
+      <!-- Node -->
+
+      
+
+      <!-- Actor -->
+
+      
+
+      <!-- Use Case -->
+
+      
+
+      <!-- Template Parameters -->
+
+      
+
+      <!-- Literals -->
+
+      
+
+      <!-- Attributes -->
+
+      
+
+      <!-- Operations -->
+
+      
+
+      <!-- Receptions -->
+
+      
+
+      <!-- Extension Points -->
+
+      
+
+      <!-- Parameters -->
+
+      
+
+      <!-- Diagrams -->
+
+      
+      
+
+      <!-- Behavior -->
+
+      
+
+      <!-- Action -->
+
+      
+
+      <!-- Interaction -->
+
+      
+
+      <!-- CombinedFragment -->
+
+      
+
+      <!-- Activity -->
+
+      
+
+      <!-- State Machine -->
+
+      
+
+      <!-- State Machine -->
+
+      
+
+      <!-- State -->
+
+      
+
+      <!-- Vertex -->
+
+      
+
+      <!-- Transition -->
+
+      
+
+      <!-- Data Model (ERD) -->
+
+      
+
+      <!-- Columns (ERD) -->
+
+      
+      <section>
+        <h3>Columns</h3>
+        
+        <table class="table table-striped table-bordered">
+          <tr>
+            <th width="20%">Name</th>
+            <th width="20%">Type</th>
+            <th width="10%">Primary Key</th>
+            <th width="10%">Foreign Key</th>
+            <th width="20%">Reference To</th>
+            <th width="10%">Nullable</th>
+            <th width="10%">Unique</th>
+          </tr>
+          
+          <tr>
+            <td><a href="ea865b9d0f9e6121d68f27ad28ef6be6.html">id_detallesVenta</a></td>
+            <td>INTEGER IDENTITY</td>
+            <td><span class='label label-info'>true</span></td>
+            <td><span class='label label-info'>false</span></td>
+            <td>
+              
+              <span class='label label-info'>null</span>
+            </td>
+            <td><span class='label label-info'>false</span></td>
+            <td><span class='label label-info'>false</span></td>
+          </tr>
+          
+          <tr>
+            <td><a href="fe35ef8539ac4ad0500519bd3ca041c9.html">id_venta</a></td>
+            <td>INTEGER</td>
+            <td><span class='label label-info'>false</span></td>
+            <td><span class='label label-info'>true</span></td>
+            <td>
+              
+                <a href='1164c550df650592cd060a9a11c325da.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>Ventas</a> ::
+              
+              <a href='8dccfb18e18beb47feaf2c986745d0e0.html'><span class='node-icon staruml-icon icon-ERDColumn'></span>id_venta</a>
+            </td>
+            <td><span class='label label-info'>false</span></td>
+            <td><span class='label label-info'>false</span></td>
+          </tr>
+          
+          <tr>
+            <td><a href="5e6f6e01542a65d4a5770205b9a30396.html">id_tipoVenta</a></td>
+            <td>INTEGER</td>
+            <td><span class='label label-info'>false</span></td>
+            <td><span class='label label-info'>true</span></td>
+            <td>
+              
+                <a href='53534d7e5e176aad175b051338f9fd8e.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>TipoVenta</a> ::
+              
+              <a href='71b8d7fa071a5947377bdf1bcec4ef2b.html'><span class='node-icon staruml-icon icon-ERDColumn'></span>id_tipoVenta</a>
+            </td>
+            <td><span class='label label-info'>false</span></td>
+            <td><span class='label label-info'>false</span></td>
+          </tr>
+          
+        </table>                
+      </section>
+      
+
+      <!-- Related Entities (ERD) -->
+
+      
+      <section>
+        <h3>Related Entities</h3>
+        
+        <table class="table table-striped table-bordered">
+          <tr>
+            <th width="25%">Entity</th>
+            <th width="25%">Cardinality</th>
+            <th width="25%">Reference Name</th>
+            <th width="25%">Relationship</th>
+          </tr>
+          
+          
+          <tr>
+            <td><a href='7cfdc4eb8506da15e654e0c431668fba.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>DetalleVentaServicio</a></td>
+            <td>1</td>
+            <td></td>
+            <td><a href='ebbcc5bad570a55ceb10b6db5baec46b.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(DetallesVentaGeneral—DetalleVentaServicio)</a></td>
+          </tr>
+          
+          
+          <tr>
+            <td><a href='0a945f989f83424f28d53c8006cd9246.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>DetalleVentaItem</a></td>
+            <td>1</td>
+            <td></td>
+            <td><a href='d439928f82a96a11dde4572e050c470a.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(DetallesVentaGeneral—DetalleVentaItem)</a></td>
+          </tr>
+          
+          
+          <tr>
+            <td><a href='53534d7e5e176aad175b051338f9fd8e.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>TipoVenta</a></td>
+            <td>1</td>
+            <td></td>
+            <td><a href='b064202d0b51c14a7d22d2bda82687a6.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(DetallesVentaGeneral—TipoVenta)</a></td>
+          </tr>
+          
+          
+          <tr>
+            <td><a href='1164c550df650592cd060a9a11c325da.html'><span class='node-icon staruml-icon icon-ERDEntity'></span>Ventas</a></td>
+            <td>1</td>
+            <td></td>
+            <td><a href='bdc312bbb3c0ee4b94f1ff03db57d7e9.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(Ventas—DetallesVentaGeneral)</a></td>
+          </tr>
+          
+        </table>                
+      </section>
+      
+
+      <!-- Data Flows (DFD) -->
+
+      
+
+      <!-- Flows (Flowchart) -->
+
+      
+
+      <!-- Properties -->
+
+      <section>
+        <h3>Properties</h3>
+        
+        <table class="table table-striped table-bordered">
+    <tr>
+        <th width="50%">Name</th>
+        <th width="50%">Value</th>
+    </tr>
+    
+    
+    
+    
+    
+    
+    
+    <tr>
+        <td>name</td>
+        <td>DetallesVentaGeneral</td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</table>                
+
+      </section>
+
+      <!-- Tags -->
+
+      
+
+      <!-- Constraints, Dependencies, Dependants -->
+
+      
+
+      <!-- Relationships -->
+
+      
+      
+<section class="element-list">
+    <h3>Relationships</h3>
+    <ul class="nav nav-list">
+        
+        <li><a href='ebbcc5bad570a55ceb10b6db5baec46b.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(DetallesVentaGeneral—DetalleVentaServicio)</a></li>
+        
+        <li><a href='d439928f82a96a11dde4572e050c470a.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(DetallesVentaGeneral—DetalleVentaItem)</a></li>
+        
+        <li><a href='b064202d0b51c14a7d22d2bda82687a6.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(DetallesVentaGeneral—TipoVenta)</a></li>
+        
+        <li><a href='bdc312bbb3c0ee4b94f1ff03db57d7e9.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(Ventas—DetallesVentaGeneral)</a></li>
+        
+    </ul>
+</section>
+
+
+
+      <!-- Owned Elements -->
+
+      
+      
+<section class="element-list">
+    <h3>Owned Elements</h3>
+    <ul class="nav nav-list">
+        
+        <li><a href='ebbcc5bad570a55ceb10b6db5baec46b.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(DetallesVentaGeneral—DetalleVentaServicio)</a></li>
+        
+        <li><a href='d439928f82a96a11dde4572e050c470a.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(DetallesVentaGeneral—DetalleVentaItem)</a></li>
+        
+        <li><a href='b064202d0b51c14a7d22d2bda82687a6.html'><span class='node-icon staruml-icon icon-ERDRelationship'></span>(DetallesVentaGeneral—TipoVenta)</a></li>
+        
+    </ul>
+</section>
+
+
+
+      <!-- Image Map Resizer (https://github.com/davidjbradshaw/image-map-resizer) -->
+      <script>
+      imageMapResize();
+      </script>
+    </div>
+  </body>
+</html>
